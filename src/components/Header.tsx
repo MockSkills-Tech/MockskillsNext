@@ -1,6 +1,4 @@
 'use client';
-
-import React, { useEffect } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -10,39 +8,19 @@ import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
-// import { useAppDispatch, useAppSelector } from '@/utils/hooks';
-import { Switch } from '@mui/material';
-import { toggleTheme } from '@/utils/themeSlice';
-import DarkModeIcon from '@mui/icons-material/DarkMode';
-import LightModeIcon from '@mui/icons-material/LightMode';
 import ThemeButton from './ThemeButton';
 import { FaGraduationCap } from "react-icons/fa";
-
-import HeaderMenu from '@/data/constant';
 import HeaderMenus from './HeaderMenu';
-
-const pages = ['Products', 'Pricing', 'Blog'];
+import { useEffect, useState } from 'react';
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Header() {
-  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
-  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
-  const [isScrolled, setIsScrolled] = React.useState(false);
-//   const dispatch = useAppDispatch();
-//   const isDarkMode = useAppSelector((state) => state.theme.isDarkMode);
-    // useEffect(()=>{
-    //     if(isDarkMode){
-    //         document.body.classList.add('dark-mode');
-    //         document.body.classList.remove('white-mode');
-    //     }else{
-    //         document.body.classList.remove('dark-mode');
-    //         document.body.classList.add('white-mode');
-    //     }
-    // },[isDarkMode]);
+  const [anchorElNav, setAnchorElNav] =useState<null | HTMLElement>(null);
+  const [anchorElUser, setAnchorElUser] =useState<null | HTMLElement>(null);
+  const [isScrolled, setIsScrolled] =useState(false);
+
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -60,7 +38,7 @@ function Header() {
   };
 
   // Track scroll position
-  React.useEffect(() => {
+  useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY>1) {
         setIsScrolled(true);

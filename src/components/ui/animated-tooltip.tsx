@@ -16,7 +16,7 @@ export const AnimatedTooltip = ({
     id: number;
     name: string;
     designation: string;
-    image: any;
+    image:string;
   }[];
 }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -32,8 +32,8 @@ export const AnimatedTooltip = ({
     useTransform(x, [-100, 100], [-50, 50]),
     springConfig
   );
-  const handleMouseMove = (event: any) => {
-    const halfWidth = event.target.offsetWidth / 2;
+  const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
+    const halfWidth = (event.target as HTMLDivElement).offsetWidth / 2;
     x.set(event.nativeEvent.offsetX - halfWidth); // set the x value, which is then used in transform and rotate
   };
 
@@ -42,7 +42,7 @@ export const AnimatedTooltip = ({
       {items.map((item, idx) => (
         <div
           className="-mr-4  relative group"
-          key={item.name}
+          key={idx}
           onMouseEnter={() => setHoveredIndex(item.id)}
           onMouseLeave={() => setHoveredIndex(null)}
         >

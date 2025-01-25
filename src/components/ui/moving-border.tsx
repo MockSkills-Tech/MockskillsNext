@@ -9,8 +9,6 @@ import {
 } from "framer-motion";
 import { useRef } from "react";
 import { cn } from "@/utils/cn";
-import { init } from "next/dist/compiled/webpack/webpack";
-import { initialize } from "next/dist/server/lib/render-server";
 
 export function Button({
   borderRadius = "1.75rem",
@@ -24,12 +22,12 @@ export function Button({
 }: {
   borderRadius?: string;
   children: React.ReactNode;
-  as?: any;
+  as?: React.ElementType;
   containerClassName?: string;
   borderClassName?: string;
   duration?: number;
   className?: string;
-  [key: string]: any;
+  [key: string]: unknown;
 }) {
   return (
     <Component
@@ -82,9 +80,9 @@ export const MovingBorder = ({
   duration?: number;
   rx?: string;
   ry?: string;
-  [key: string]: any;
+  [key: string]: unknown;
 }) => {
-  const pathRef = useRef<any>(null);
+  const pathRef = useRef<SVGRectElement | null>(null);
   const progress = useMotionValue<number>(0);
 
   useAnimationFrame((time) => {

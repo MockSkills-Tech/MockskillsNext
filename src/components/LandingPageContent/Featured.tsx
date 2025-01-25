@@ -1,6 +1,6 @@
-import { Box, Typography, Card, CardContent } from '@mui/material';
+'use client';
 import ProgressBar from './ProgressBar';
-import { FaBattleNet, FaBook, FaChalkboardTeacher, FaHandsHelping, FaUsers } from 'react-icons/fa';
+import { FaBattleNet, FaBook,FaHandsHelping, FaUsers } from 'react-icons/fa';
 
 export default function FeatureSection() {
   return (
@@ -9,7 +9,7 @@ export default function FeatureSection() {
         {/* Left Section */}
         <div className='dark:text-gray-400 text-gray-600'>
           <h2 className="text-4xl font-bold mb-6 dark:text-white text-gray-900">
-            What's in <span className="text-gray-500">MockSkills?</span>
+            What&apos;s in <span className="text-gray-500">MockSkills?</span>
           </h2>
           <div className="space-y-8">
             <div className="flex">
