@@ -78,9 +78,7 @@ export default function Page() {
   <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 dark:bg-gradient-to-r from-[#141A21] via-[#141A20] to-[#d8591e] opacity-50"></div>
         <div className="absolute inset-0 dark:bg-gradient-to-l from-[#141A21] via-transparent to-transparent"></div>
-        <div className="absolute inset-0 dark:bg-gradient-to-b from-[#141A21] via-transparent to-transparent "></div>
-        <div className="absolute inset-0 dark:bg-gradient-to-t from-[#141A21] via-transparent to-transparent "></div>
-      
+        
       </div>
 
   {/* Floating Dots */}
