@@ -11,11 +11,9 @@ import Avatar from '@mui/material/Avatar';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import ThemeButton from './ThemeButton';
-import { FaGraduationCap } from "react-icons/fa";
 import HeaderMenus from './HeaderMenu';
 import { useEffect, useState } from 'react';
 import MockSkills_icon from '@/components/assets/MockSkills_icon.png'
-import Mockskills_logo from '@/components/assets/mockskills_logo.png'
 import Image from 'next/image';
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 

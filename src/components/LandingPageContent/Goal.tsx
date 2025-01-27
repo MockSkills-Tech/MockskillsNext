@@ -1,9 +1,7 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
 import a1 from '../../components/assets/about1.svg';
 import a2 from '../../components/assets/about2.svg';
 import a3 from '../../components/assets/about3.svg';
-import Image from 'next/image';
 import ValueCard from '@/components/LandingPageContent/ValueCard'; // Adjust the import path as necessary
 
 const Goal = () => {
