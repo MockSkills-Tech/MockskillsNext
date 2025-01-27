@@ -11,6 +11,10 @@ import byuti from "@/components/assets/byuti.jpeg";
 import mithalesh from '@/components/assets/mithalesh9.jpeg';
 import kundan from '@/components/assets/kundan1.jpeg';
 import FeatureSection from "@/components/LandingPageContent/Featured";
+import SuccessStory from "@/components/LandingPageContent/SuccessStory";
+import Goal from '@/components/LandingPageContent/Goal'
+import FAQ from "@/components/LandingPageContent/FAQ";
+import Footer from "@/components/LandingPageContent/Footer";
 export default function Page() {
   const people = [
     {
@@ -125,7 +129,10 @@ export default function Page() {
         </small>
     </div>
     <FeatureSection/>
-    
+    <Goal/>
+    <SuccessStory/>
+    <FAQ/>
+    <Footer/>
   </div>
   
 </div>

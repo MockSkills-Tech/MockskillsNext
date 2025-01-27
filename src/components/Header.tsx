@@ -14,6 +14,9 @@ import ThemeButton from './ThemeButton';
 import { FaGraduationCap } from "react-icons/fa";
 import HeaderMenus from './HeaderMenu';
 import { useEffect, useState } from 'react';
+import MockSkills_icon from '@/components/assets/MockSkills_icon.png'
+import Mockskills_logo from '@/components/assets/mockskills_logo.png'
+import Image from 'next/image';
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Header() {
@@ -81,11 +84,7 @@ function Header() {
               color: 'inherit',
             }}
           >
-            <FaGraduationCap className="text-blue-500 text-2xl md:text-3xl mr-2" />
-            <span className="text-xl md:text-2xl tracking-normal font-sans">
-                <span className="text-blue-500">Mock</span>
-                <span className="text-green-500">Skills</span>
-            </span>
+            <Image src={MockSkills_icon} alt='MockSkills-Logo' className='size-14'></Image>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -140,11 +139,7 @@ function Header() {
               color: 'inherit',
             }}
           >
-           <FaGraduationCap className="text-blue-500 text-2xl md:text-3xl mr-2" />
-            <span className="text-xl md:text-2xl tracking-normal font-sans">
-                <span className="text-blue-500">Mock</span>
-                <span className="text-green-500">Skills</span>
-            </span>
+           <Image src={MockSkills_icon} alt='MockSkills-Logo' className='size-12'></Image>
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {/* {pages.map((page) => (
