@@ -56,7 +56,7 @@ const FAQ = () => {
                 {faqs.map((faq, index) => (
                     <div
                         key={index}
-                        className={`border border-gray-700 rounded-lg p-2 bg-transparent shadow-sm transition-transform duration-300 ${activeIndex === index ? "scale-105" : "scale-100"
+                        className={`border dark:border-gray-700 border-gray-200 rounded-lg p-2 bg-transparent shadow-sm transition-transform duration-300 ${activeIndex === index ? "scale-105" : "scale-100"
                             }`}
                         role="region"
                         aria-labelledby={`faq-${index}`}
