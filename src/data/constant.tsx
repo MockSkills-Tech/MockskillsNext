@@ -1,4 +1,3 @@
-
 import mithaelshImage from "@/components/assets/mithalesh9.jpeg";
 import dilipImage from "@/components/assets/dilip8.jpeg";
 import samardniImage from "@/components/assets/samardni.jpeg";
@@ -9,14 +8,18 @@ import kundanImage from "@/components/assets/kundan1.jpeg";
 import vishalImage from "@/components/assets/vishal12.jpeg";
 import shrutiImage from "@/components/assets/shruti.jpeg";
 import sumitImage from "@/components/assets/sumit.jpeg";
+
+// Header Menu Data: Contains navigation items for the header.
 const HeaderMenu = [
-    { title: 'Home', options: [] },
-    { title: 'About', options: [] },
-    { title: 'Blog', options: [] },
-    {title:'Contact',options:[]}
-  ];
+  { title: "Home", options: [] },
+  { title: "About", options: [] },
+  { title: "Blog", options: [] },
+  { title: "Contact", options: [] },
+];
+
 export default HeaderMenu;
 
+// COMMUNITY_CARDS_DATA: Data for each community member including name, title, feedback, and LinkedIn URL.
 export const COMMUNITY_CARDS_DATA = [
   {
     name: "Mithalesh Kumar",
@@ -24,7 +27,7 @@ export const COMMUNITY_CARDS_DATA = [
     feedback:
       "Exponent equipped me with essential tools to succeed in my career journey.",
     profileImage: mithaelshImage,
-    linkedin: "https://www.linkedin.com/in/mithalesh-kumar-123456789/", // Example link, replace with actual if available
+    linkedin: "https://www.linkedin.com/in/mithalesh-kumar-123456789/",
   },
   {
     name: "Sumit Verma",
@@ -32,7 +35,7 @@ export const COMMUNITY_CARDS_DATA = [
     feedback:
       "The engineering manager course provided invaluable insights and resources.",
     profileImage: sumitImage,
-    linkedin: "https://www.linkedin.com/in/sumit-verma-987654321/", // Example link, replace with actual if available
+    linkedin: "https://www.linkedin.com/in/sumit-verma-987654321/",
   },
   {
     name: "Dilip Sharma",
@@ -40,7 +43,7 @@ export const COMMUNITY_CARDS_DATA = [
     feedback:
       "Thanks to Exponent, I mastered product design interviews and secured my dream job.",
     profileImage: dilipImage,
-    linkedin: "https://www.linkedin.com/in/dilip-sharma-456789012/", // Example link, replace with actual if available
+    linkedin: "https://www.linkedin.com/in/dilip-sharma-456789012/",
   },
   {
     name: "Samardni Singh",
@@ -48,7 +51,7 @@ export const COMMUNITY_CARDS_DATA = [
     feedback:
       "The data science interview prep materials were instrumental in my success.",
     profileImage: samardniImage,
-    linkedin: "https://www.linkedin.com/in/samardni-singh-345678901/", // Example link, replace with actual if available
+    linkedin: "https://www.linkedin.com/in/samardni-singh-345678901/",
   },
   {
     name: "Keshav Rao",
@@ -56,7 +59,7 @@ export const COMMUNITY_CARDS_DATA = [
     feedback:
       "Mock interviews helped me sharpen my skills and land a role at Tesla.",
     profileImage: keshavImage,
-    linkedin: "https://www.linkedin.com/in/keshav-rao-234567890/", // Example link, replace with actual if available
+    linkedin: "https://www.linkedin.com/in/keshav-rao-234567890/",
   },
   {
     name: "Astha Sharma",
@@ -64,7 +67,7 @@ export const COMMUNITY_CARDS_DATA = [
     feedback:
       "I aced my system design interviews thanks to the extensive resources provided.",
     profileImage: asthaImage,
-    linkedin: "https://www.linkedin.com/in/astha-sharma-123456789/", // Example link, replace with actual if available
+    linkedin: "https://www.linkedin.com/in/astha-sharma-123456789/",
   },
   {
     name: "Manish Verma",
@@ -88,7 +91,7 @@ export const COMMUNITY_CARDS_DATA = [
     feedback:
       "The AI-focused sections prepared me thoroughly for my research role.",
     profileImage: vishalImage,
-    linkedin: "https://www.linkedin.com/in/vishal-desai-456123789/", // Example link, replace with actual if available
+    linkedin: "https://www.linkedin.com/in/vishal-desai-456123789/",
   },
   {
     name: "Shruti Gupta",
@@ -96,6 +99,6 @@ export const COMMUNITY_CARDS_DATA = [
     feedback:
       "Mock interviews helped me confidently handle both frontend and backend tasks.",
     profileImage: shrutiImage,
-    linkedin: "https://www.linkedin.com/in/shruti-gupta-123789456/", // Example link, replace with actual if available
+    linkedin: "https://www.linkedin.com/in/shruti-gupta-123789456/",
   },
 ];

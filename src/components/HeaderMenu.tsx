@@ -7,6 +7,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import HeaderMenu from '@/data/constant';
 
+
 const StyledMenu = styled((props: MenuProps) => (
   <Menu
     elevation={0}
@@ -60,7 +61,7 @@ export default function HeaderMenus() {
   };
 
   return (
-    <div className="dark:text-white text-black">
+    <div className="dark:text-white text-black flex justify-between mx-[15%]"> {/* 15% margin on both sides */}
       {HeaderMenu.map((menu) => (
         <React.Fragment key={menu.title}>
           <Button
@@ -71,35 +72,32 @@ export default function HeaderMenus() {
             variant="contained"
             disableElevation
             onMouseOver={(event) => handleOpen(event, menu.title)}
-            endIcon={menu.options.length > 0 && <KeyboardArrowDownIcon />}  //if menu has options then show arrow icon
+            endIcon={menu.options.length > 0 && <KeyboardArrowDownIcon />}
             sx={{ marginRight: 2, backgroundColor: 'transparent' }}
             className="dark:text-white text-black border-black"
           >
             {menu.title}
           </Button>
-          {menu.options.length > 0 &&(<StyledMenu
-            id={`${menu.title}-menu`}
-            MenuListProps={{
-              'aria-labelledby': `${menu.title}-button`,
-              onMouseLeave: () => handleClose(menu.title),
-            }}
-            anchorEl={anchorEls[menu.title]}
-            open={Boolean(anchorEls[menu.title])}
-            onClose={() => handleClose(menu.title)}
-            className='dark:text-white  text-black'
-          >
-            {menu.options.map((option) => (
-              <MenuItem
-                key={option}
-                onClick={() => handleClose(menu.title)}
-                disableRipple
-                
-              >
-                <EditIcon />
-                {option}
-              </MenuItem>
-            ))}
-          </StyledMenu>)}
+          {menu.options.length > 0 && (
+            <StyledMenu
+              id={`${menu.title}-menu`}
+              MenuListProps={{
+                'aria-labelledby': `${menu.title}-button`,
+                onMouseLeave: () => handleClose(menu.title),
+              }}
+              anchorEl={anchorEls[menu.title]}
+              open={Boolean(anchorEls[menu.title])}
+              onClose={() => handleClose(menu.title)}
+              className="dark:text-white text-black"
+            >
+              {menu.options.map((option) => (
+                <MenuItem key={option} onClick={() => handleClose(menu.title)} disableRipple>
+                  <EditIcon />
+                  {option}
+                </MenuItem>
+              ))}
+            </StyledMenu>
+          )}
         </React.Fragment>
       ))}
     </div>

@@ -1,6 +1,8 @@
 'use client';
 import ProgressBar from './ProgressBar';
-import { FaBattleNet, FaBook,FaHandsHelping, FaUsers } from 'react-icons/fa';
+import { FaChalkboardTeacher } from 'react-icons/fa';
+
+import { FaBattleNet, FaBook, FaHandsHelping, FaUsers } from 'react-icons/fa';
 
 export default function FeatureSection() {
   return (
@@ -12,48 +14,97 @@ export default function FeatureSection() {
             What&apos;s in <span className="text-gray-500">MockSkills?</span>
           </h2>
           <div className="space-y-8">
+            {/* BattleGround */}
             <div className="flex">
-              <div className="text-xl"><FaBattleNet className="mr-3 text-orange-600" /></div>
-              <div className='text-start'>
-                <h3 className="font-bold text-lg">BattleGround</h3>
-                <span className='text-sm'>
-                Battleground is a platform designed to help you  enhance your problem-solving skills using  Data Structures and  Algorithms.
-                </span>
+              <div className="text-start">
+                <div className="flex items-center">
+                  <div className="text-xl mr-3">
+                    <FaBattleNet className="text-orange-600" />
+                  </div>
+                  <h3 className="font-bold text-lg">BattleGround</h3>
+                </div>
+                <div className="ml-8">
+                  <span className="text-sm">
+                    Battleground is a platform designed to help you enhance your problem-solving skills using Data Structures and Algorithms.
+                  </span>
+                </div>
               </div>
             </div>
-            <div className="flex items-start">
-              <div className="text-xl"><FaHandsHelping className="mr-3 text-orange-600" /></div>
-              <div className='text-start'>
-                <h3 className="font-bold text-lg">CollabZone</h3>
-                <span className="text-sm">
-                Join our vibrant community of GenZ coders to find your co-founder, CTO, and all the essential skills needed to launch and grow your startup.
-                </span>
+
+            {/* CollabZone */}
+            <div className="flex">
+              <div className="text-start">
+                <div className="flex items-center">
+                  <div className="text-xl mr-3">
+                    <FaHandsHelping className="text-orange-600" />
+                  </div>
+                  <h3 className="font-bold text-lg">CollabZone</h3>
+                </div>
+                <div className="ml-8">
+                  <span className="text-sm">
+                    Join our vibrant community of GenZ coders to find your co-founder, CTO, and all the essential skills needed to launch and grow your startup.
+                  </span>
+                </div>
               </div>
             </div>
-            <div className="flex items-start">
-              <div className="text-xl"><FaUsers className="mr-3 text-purple-600" /></div>
-              <div className='text-start'>
-                <h3 className="font-bold text-xl">Partners</h3>
-                <p className="text-sm">
-                Practice interviews, Engage in conversations Challenge yourself with interactive coding games guided by AI to make learning fun and engaging.
-                </p>
+
+            {/* Partners */}
+            <div className="flex">
+              <div className="text-start">
+                <div className="flex items-center">
+                  <div className="text-xl mr-3">
+                    <FaUsers className="text-purple-600" />
+                  </div>
+                  <h3 className="font-bold text-lg">Partners</h3>
+                </div>
+                <div className="ml-8">
+                  <span className="text-sm">
+                    Practice interviews, engage in conversations, and challenge yourself with interactive coding games guided by AI to make learning fun and engaging.
+                  </span>
+                </div>
               </div>
             </div>
-            <div className="flex items-start">
-              <div className="text-xl"><FaBook className="mr-3 text-blue-600" /></div>
-              <div className='text-start'>
-                <h3 className="font-bold text-lg">Courses</h3>
-                <p className="text-sm">
-                Explore all tailored courses for specific roles, companies, and skills.
-                </p>
+
+            {/* Courses */}
+            <div className="flex">
+              <div className="text-start">
+                <div className="flex items-center">
+                  <div className="text-xl mr-3">
+                    <FaBook className="text-blue-600" />
+                  </div>
+                  <h3 className="font-bold text-lg">Courses</h3>
+                </div>
+                <div className="ml-8">
+                  <span className="text-sm">
+                    Explore all tailored courses for specific roles, companies, and skills.
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Coaching */}
+            <div className="flex">
+              <div className="text-start">
+                <div className="flex items-center">
+                  <div className="text-xl mr-3">
+                    <FaChalkboardTeacher className="text-yellow-600" />
+                  </div>
+                  <h3 className="font-bold text-lg">Coaching</h3>
+                </div>
+                <div className="ml-8">
+                  <span className="text-sm">
+                    Get personalized coaching to advance your skills in various tech domains, including mentorship from industry experts.
+                  </span>
+                </div>
               </div>
             </div>
           </div>
+
         </div>
 
         {/* Right Section */}
         <div className=" rounded-lg">
-        <ProgressBar/>
+          <ProgressBar />
         </div>
       </div>
     </div>
